@@ -286,6 +286,15 @@ function show_infobox() {
 
     <script src="https://pygame-web.github.io/cdn/0.9.3//browserfs.min.js"></script>
 
+    <style id="phone-fix">
+        /* dragging the thumb stick must steer, not scroll or zoom the page */
+        html, body { overflow: hidden; overscroll-behavior: none; }
+        canvas {
+            touch-action: none;
+            -webkit-user-select: none; user-select: none;
+            -webkit-touch-callout: none;
+        }
+    </style>
 </head>
 
 <body>
